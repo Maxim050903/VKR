@@ -1,0 +1,649 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{26643F28-FFFE-43CF-9244-4319C53E4EBE}|Api\\Api.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\api\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26643F28-FFFE-43CF-9244-4319C53E4EBE}|Api\\Api.csproj|solutionrelative:api\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92140DA3-0368-4FE3-AF8D-953FC27D59F2}|Core\\Core.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\core\\models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92140DA3-0368-4FE3-AF8D-953FC27D59F2}|Core\\Core.csproj|solutionrelative:core\\models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92140DA3-0368-4FE3-AF8D-953FC27D59F2}|Core\\Core.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\core\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92140DA3-0368-4FE3-AF8D-953FC27D59F2}|Core\\Core.csproj|solutionrelative:core\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\database\\entities\\requestsentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|solutionrelative:database\\entities\\requestsentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26643F28-FFFE-43CF-9244-4319C53E4EBE}|Api\\Api.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\api\\interfaces\\idepartmentrepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{26643F28-FFFE-43CF-9244-4319C53E4EBE}|Api\\Api.csproj|solutionrelative:api\\interfaces\\idepartmentrepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD718A1-7F98-4E52-AA45-C75B3353D01F}|VKR_backend\\VKR_backend.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\vkr_backend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD718A1-7F98-4E52-AA45-C75B3353D01F}|VKR_backend\\VKR_backend.csproj|solutionrelative:vkr_backend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD718A1-7F98-4E52-AA45-C75B3353D01F}|VKR_backend\\VKR_backend.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\vkr_backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD718A1-7F98-4E52-AA45-C75B3353D01F}|VKR_backend\\VKR_backend.csproj|solutionrelative:vkr_backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26643F28-FFFE-43CF-9244-4319C53E4EBE}|Api\\Api.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\api\\interfaces\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26643F28-FFFE-43CF-9244-4319C53E4EBE}|Api\\Api.csproj|solutionrelative:api\\interfaces\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD718A1-7F98-4E52-AA45-C75B3353D01F}|VKR_backend\\VKR_backend.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\vkr_backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD718A1-7F98-4E52-AA45-C75B3353D01F}|VKR_backend\\VKR_backend.csproj|solutionrelative:vkr_backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26643F28-FFFE-43CF-9244-4319C53E4EBE}|Api\\Api.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\api\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26643F28-FFFE-43CF-9244-4319C53E4EBE}|Api\\Api.csproj|solutionrelative:api\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\database\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|solutionrelative:database\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\database\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|solutionrelative:database\\repositories\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26643F28-FFFE-43CF-9244-4319C53E4EBE}|Api\\Api.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\api\\services\\departmentservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26643F28-FFFE-43CF-9244-4319C53E4EBE}|Api\\Api.csproj|solutionrelative:api\\services\\departmentservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92140DA3-0368-4FE3-AF8D-953FC27D59F2}|Core\\Core.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\core\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92140DA3-0368-4FE3-AF8D-953FC27D59F2}|Core\\Core.csproj|solutionrelative:core\\models\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\database\\entities\\_taskentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|solutionrelative:database\\entities\\_taskentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\database\\entities\\departmententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|solutionrelative:database\\entities\\departmententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\database\\entities\\requests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|solutionrelative:database\\entities\\requests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\database\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|solutionrelative:database\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\database\\vkrdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|solutionrelative:database\\vkrdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD718A1-7F98-4E52-AA45-C75B3353D01F}|VKR_backend\\VKR_backend.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\vkr_backend\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD718A1-7F98-4E52-AA45-C75B3353D01F}|VKR_backend\\VKR_backend.csproj|solutionrelative:vkr_backend\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{92140DA3-0368-4FE3-AF8D-953FC27D59F2}|Core\\Core.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\core\\models\\_task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{92140DA3-0368-4FE3-AF8D-953FC27D59F2}|Core\\Core.csproj|solutionrelative:core\\models\\_task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\cuzev\\AppData\\Local\\Temp\\Rar$DIa23932.20479.rartemp\\AuthenticationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD718A1-7F98-4E52-AA45-C75B3353D01F}|VKR_backend\\VKR_backend.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\vkr_backend\\extantions\\apiextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD718A1-7F98-4E52-AA45-C75B3353D01F}|VKR_backend\\VKR_backend.csproj|solutionrelative:vkr_backend\\extantions\\apiextentions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41D8A7C0-D1C4-4565-A8CC-09CF2A56CF38}|Ifrastructure\\Infrastructure.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\ifrastructure\\jwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41D8A7C0-D1C4-4565-A8CC-09CF2A56CF38}|Ifrastructure\\Infrastructure.csproj|solutionrelative:ifrastructure\\jwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\database\\configurations\\usersconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|solutionrelative:database\\configurations\\usersconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\database\\migrations\\20250227113836_secondmidration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|solutionrelative:database\\migrations\\20250227113836_secondmidration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\database\\migrations\\vkrdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|solutionrelative:database\\migrations\\vkrdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\database\\migrations\\20250223165841_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|solutionrelative:database\\migrations\\20250223165841_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\database\\migrations\\20250223165841_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|solutionrelative:database\\migrations\\20250223165841_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\database\\migrations\\20250227112803_secondcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B5E3F3D-9C75-4255-B3E3-1427CA796870}|DataBase\\DataBase.csproj|solutionrelative:database\\migrations\\20250227112803_secondcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD718A1-7F98-4E52-AA45-C75B3353D01F}|VKR_backend\\VKR_backend.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\vkr_backend\\dtos\\userregisterresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD718A1-7F98-4E52-AA45-C75B3353D01F}|VKR_backend\\VKR_backend.csproj|solutionrelative:vkr_backend\\dtos\\userregisterresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD718A1-7F98-4E52-AA45-C75B3353D01F}|VKR_backend\\VKR_backend.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\vkr_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AD718A1-7F98-4E52-AA45-C75B3353D01F}|VKR_backend\\VKR_backend.csproj|solutionrelative:vkr_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41D8A7C0-D1C4-4565-A8CC-09CF2A56CF38}|Ifrastructure\\Infrastructure.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\ifrastructure\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41D8A7C0-D1C4-4565-A8CC-09CF2A56CF38}|Ifrastructure\\Infrastructure.csproj|solutionrelative:ifrastructure\\jwtoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AD718A1-7F98-4E52-AA45-C75B3353D01F}|VKR_backend\\VKR_backend.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\vkr_backend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4AD718A1-7F98-4E52-AA45-C75B3353D01F}|VKR_backend\\VKR_backend.csproj|solutionrelative:vkr_backend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41D8A7C0-D1C4-4565-A8CC-09CF2A56CF38}|Ifrastructure\\Infrastructure.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\ifrastructure\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41D8A7C0-D1C4-4565-A8CC-09CF2A56CF38}|Ifrastructure\\Infrastructure.csproj|solutionrelative:ifrastructure\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26643F28-FFFE-43CF-9244-4319C53E4EBE}|Api\\Api.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\api\\interfaces\\ijwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26643F28-FFFE-43CF-9244-4319C53E4EBE}|Api\\Api.csproj|solutionrelative:api\\interfaces\\ijwtprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26643F28-FFFE-43CF-9244-4319C53E4EBE}|Api\\Api.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\api\\interfaces\\ipasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26643F28-FFFE-43CF-9244-4319C53E4EBE}|Api\\Api.csproj|solutionrelative:api\\interfaces\\ipasswordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{26643F28-FFFE-43CF-9244-4319C53E4EBE}|Api\\Api.csproj|c:\\users\\cuzev\\desktop\\gitrepository\\vkr\\backend\\vkr_backend\\api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{26643F28-FFFE-43CF-9244-4319C53E4EBE}|Api\\Api.csproj|solutionrelative:api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Request.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Core\\Models\\Request.cs",
+              "RelativeDocumentMoniker": "Core\\Models\\Request.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Core\\Models\\Request.cs",
+              "RelativeToolTip": "Core\\Models\\Request.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T17:36:45.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RequestsEntity.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Entities\\RequestsEntity.cs",
+              "RelativeDocumentMoniker": "DataBase\\Entities\\RequestsEntity.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Entities\\RequestsEntity.cs",
+              "RelativeToolTip": "DataBase\\Entities\\RequestsEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T17:30:41.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserEntity.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Entities\\UserEntity.cs",
+              "RelativeDocumentMoniker": "DataBase\\Entities\\UserEntity.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Entities\\UserEntity.cs",
+              "RelativeToolTip": "DataBase\\Entities\\UserEntity.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T11:24:54.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "VKRDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\VKRDBContext.cs",
+              "RelativeDocumentMoniker": "DataBase\\VKRDBContext.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\VKRDBContext.cs",
+              "RelativeToolTip": "DataBase\\VKRDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T11:24:22.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "DataBase\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "DataBase\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T12:21:14.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserServices.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Services\\UserServices.cs",
+              "RelativeDocumentMoniker": "Api\\Services\\UserServices.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Services\\UserServices.cs",
+              "RelativeToolTip": "Api\\Services\\UserServices.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAAC0AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T12:38:57.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Api\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "Api\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T12:37:54.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\VKR_backend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "VKR_backend\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\VKR_backend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "VKR_backend\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T12:39:49.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\VKR_backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "VKR_backend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\VKR_backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "VKR_backend\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T13:10:03.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\VKR_backend\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "VKR_backend\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\VKR_backend\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "VKR_backend\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T12:14:59.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Core\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Core\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Core\\Models\\User.cs",
+              "RelativeToolTip": "Core\\Models\\User.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T12:21:01.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Requests.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Entities\\Requests.cs",
+              "RelativeDocumentMoniker": "DataBase\\Entities\\Requests.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Entities\\Requests.cs",
+              "RelativeToolTip": "DataBase\\Entities\\Requests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T15:16:08.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUserServices.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Interfaces\\IUserServices.cs",
+              "RelativeDocumentMoniker": "Api\\Interfaces\\IUserServices.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Interfaces\\IUserServices.cs",
+              "RelativeToolTip": "Api\\Interfaces\\IUserServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-25T12:41:26.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IDepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Interfaces\\IDepartmentRepository.cs",
+              "RelativeDocumentMoniker": "Api\\Interfaces\\IDepartmentRepository.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Interfaces\\IDepartmentRepository.cs",
+              "RelativeToolTip": "Api\\Interfaces\\IDepartmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T16:05:24.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Core\\Models\\Department.cs",
+              "RelativeDocumentMoniker": "Core\\Models\\Department.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Core\\Models\\Department.cs",
+              "RelativeToolTip": "Core\\Models\\Department.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T15:20:04.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DepartmentServices.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Services\\DepartmentServices.cs",
+              "RelativeDocumentMoniker": "Api\\Services\\DepartmentServices.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Services\\DepartmentServices.cs",
+              "RelativeToolTip": "Api\\Services\\DepartmentServices.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAuwEkAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T15:26:01.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Repositories\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "DataBase\\Repositories\\DepartmentRepository.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Repositories\\DepartmentRepository.cs",
+              "RelativeToolTip": "DataBase\\Repositories\\DepartmentRepository.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAADsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T15:26:25.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\VKR_backend\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "VKR_backend\\Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\VKR_backend\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "VKR_backend\\Controllers\\DepartmentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T15:24:36.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DepartmentEntity.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Entities\\DepartmentEntity.cs",
+              "RelativeDocumentMoniker": "DataBase\\Entities\\DepartmentEntity.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Entities\\DepartmentEntity.cs",
+              "RelativeToolTip": "DataBase\\Entities\\DepartmentEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T11:25:17.166Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_TaskEntity.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Entities\\_TaskEntity.cs",
+              "RelativeDocumentMoniker": "DataBase\\Entities\\_TaskEntity.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Entities\\_TaskEntity.cs",
+              "RelativeToolTip": "DataBase\\Entities\\_TaskEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T11:25:18.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_Task.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Core\\Models\\_Task.cs",
+              "RelativeDocumentMoniker": "Core\\Models\\_Task.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Core\\Models\\_Task.cs",
+              "RelativeToolTip": "Core\\Models\\_Task.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T15:12:58.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\AppData\\Local\\Temp\\Rar$DIa23932.20479.rartemp\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DIa23932.20479.rartemp\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\cuzev\\AppData\\Local\\Temp\\Rar$DIa23932.20479.rartemp\\AuthenticationService.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\AppData\\Local\\Temp\\Rar$DIa23932.20479.rartemp\\AuthenticationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T15:08:15.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ApiExtentions.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\VKR_backend\\Extantions\\ApiExtentions.cs",
+              "RelativeDocumentMoniker": "VKR_backend\\Extantions\\ApiExtentions.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\VKR_backend\\Extantions\\ApiExtentions.cs",
+              "RelativeToolTip": "VKR_backend\\Extantions\\ApiExtentions.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T14:50:47.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20250227113836_SecondMidration.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Migrations\\20250227113836_SecondMidration.cs",
+              "RelativeDocumentMoniker": "DataBase\\Migrations\\20250227113836_SecondMidration.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Migrations\\20250227113836_SecondMidration.cs",
+              "RelativeToolTip": "DataBase\\Migrations\\20250227113836_SecondMidration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T11:38:43.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "JwtProvider.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Ifrastructure\\JwtProvider.cs",
+              "RelativeDocumentMoniker": "Ifrastructure\\JwtProvider.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Ifrastructure\\JwtProvider.cs",
+              "RelativeToolTip": "Ifrastructure\\JwtProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T12:43:12.381Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UsersConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Configurations\\UsersConfiguration.cs",
+              "RelativeDocumentMoniker": "DataBase\\Configurations\\UsersConfiguration.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Configurations\\UsersConfiguration.cs",
+              "RelativeToolTip": "DataBase\\Configurations\\UsersConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T11:33:29.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20250223165841_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Migrations\\20250223165841_InitialCreate.cs",
+              "RelativeDocumentMoniker": "DataBase\\Migrations\\20250223165841_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Migrations\\20250223165841_InitialCreate.cs",
+              "RelativeToolTip": "DataBase\\Migrations\\20250223165841_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T11:32:55.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20250223165841_InitialCreate.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Migrations\\20250223165841_InitialCreate.Designer.cs",
+              "RelativeDocumentMoniker": "DataBase\\Migrations\\20250223165841_InitialCreate.Designer.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Migrations\\20250223165841_InitialCreate.Designer.cs",
+              "RelativeToolTip": "DataBase\\Migrations\\20250223165841_InitialCreate.Designer.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T11:33:41.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "VKRDBContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Migrations\\VKRDBContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "DataBase\\Migrations\\VKRDBContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Migrations\\VKRDBContextModelSnapshot.cs",
+              "RelativeToolTip": "DataBase\\Migrations\\VKRDBContextModelSnapshot.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T11:33:47.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20250227112803_sECONDcREATE.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Migrations\\20250227112803_sECONDcREATE.cs",
+              "RelativeDocumentMoniker": "DataBase\\Migrations\\20250227112803_sECONDcREATE.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\DataBase\\Migrations\\20250227112803_sECONDcREATE.cs",
+              "RelativeToolTip": "DataBase\\Migrations\\20250227112803_sECONDcREATE.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T11:32:46.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "UserRegisterResponse.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\VKR_backend\\DTOs\\UserRegisterResponse.cs",
+              "RelativeDocumentMoniker": "VKR_backend\\DTOs\\UserRegisterResponse.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\VKR_backend\\DTOs\\UserRegisterResponse.cs",
+              "RelativeToolTip": "VKR_backend\\DTOs\\UserRegisterResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T11:22:35.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Ifrastructure\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "Ifrastructure\\PasswordHasher.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Ifrastructure\\PasswordHasher.cs",
+              "RelativeToolTip": "Ifrastructure\\PasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T12:40:21.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\VKR_backend\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "VKR_backend\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\VKR_backend\\appsettings.Development.json",
+              "RelativeToolTip": "VKR_backend\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-24T12:52:51.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IPasswordHasher.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Interfaces\\IPasswordHasher.cs",
+              "RelativeDocumentMoniker": "Api\\Interfaces\\IPasswordHasher.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Interfaces\\IPasswordHasher.cs",
+              "RelativeToolTip": "Api\\Interfaces\\IPasswordHasher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T12:40:01.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "Api\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Services\\AuthService.cs",
+              "RelativeToolTip": "Api\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T12:37:15.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\VKR_backend\\Program.cs",
+              "RelativeDocumentMoniker": "VKR_backend\\Program.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\VKR_backend\\Program.cs",
+              "RelativeToolTip": "VKR_backend\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABoAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T12:36:49.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "JwtOptions.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Ifrastructure\\JwtOptions.cs",
+              "RelativeDocumentMoniker": "Ifrastructure\\JwtOptions.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Ifrastructure\\JwtOptions.cs",
+              "RelativeToolTip": "Ifrastructure\\JwtOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T12:57:02.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IJwtProvider.cs",
+              "DocumentMoniker": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Interfaces\\IJwtProvider.cs",
+              "RelativeDocumentMoniker": "Api\\Interfaces\\IJwtProvider.cs",
+              "ToolTip": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Interfaces\\IJwtProvider.cs",
+              "RelativeToolTip": "Api\\Interfaces\\IJwtProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-24T13:15:41.092Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
