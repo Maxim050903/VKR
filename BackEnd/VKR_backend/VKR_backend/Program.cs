@@ -1,4 +1,5 @@
-using Api.Interfaces;
+using Api.Interfaces.Repositories;
+using Api.Interfaces.Services;
 using Api.Services;
 using DataBase;
 using DataBase.Repositories;
@@ -30,9 +31,25 @@ var jwtOptions = configuration.GetSection("JwtOptions").Get<JwtOptions>();
 builder.Services.Configure<JwtOptions>(configuration.GetSection(nameof(JwtOptions)));
 
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IUserServices, UserServices>();
 builder.Services.AddScoped<IJwtProvider, JwtProvider>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+
+
+//Repositories
+builder.Services.AddScoped<IAgrigatesRepository, AgrigatesRepository>();
+builder.Services.AddScoped<ICertificatesRepository, CertificatesRepository>();
+builder.Services.AddScoped<IContractsRepository, ContractsRepository>();
+builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+builder.Services.AddScoped<IOrganizationRepository, OrganizationRepository>();
+builder.Services.AddScoped<IRequestRepository, RequestRepository>();
+builder.Services.AddScoped<IResumesRepository, ResumesRepository>();
+builder.Services.AddScoped<ITasksRepository, TasksRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+
+//Services
+builder.Services.AddScoped<IUserServices, UserServices>();
+
+
 
 builder.Services.AddAPIAuthentication(jwtOptions);
 

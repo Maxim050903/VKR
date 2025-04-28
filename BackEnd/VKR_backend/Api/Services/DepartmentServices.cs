@@ -1,5 +1,5 @@
-﻿using Core.Models;
-using DataBase.Repositories;
+﻿using Api.Interfaces.Repositories;
+using Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,15 +22,17 @@ namespace Api.Services
 
         public async Task<Guid> CreateDepartment(string Name, Guid IdBoss, List<Guid> IdMembers)
         {
-            Department department = new Department()
-            {
-                Id = new Guid(),
-                Name = Name,
-                IdBoss = IdBoss,
-                Members = IdMembers
-            };
+            //Department department = new Department()
+            //{
+            //    Id = new Guid(),
+            //    Name = Name,
+            //    IdBoss = IdBoss,
+            //    Members = IdMembers
+            //};
 
-            var result = await _departmentRepository.CreateDepartment(department);
+            var department = Department.CreateDepartment(Name, IdBoss, IdMembers);
+
+            var result = await _departmentRepository.CreateDepartment(department.department);
 
             return result;
         }
@@ -49,17 +51,19 @@ namespace Api.Services
         
         public async Task<Guid> UpdateDepartment(Guid Id, string Name, Guid IdBoss, List<Guid> IdMembers)
         {
-            Department department = new Department()
-            {
-                Id = Id,
-                Name = Name,
-                IdBoss = IdBoss,
-                Members = IdMembers
-            };
+            //Department department = new Department()
+            //{
+            //    Id = Id,
+            //    Name = Name,
+            //    IdBoss = IdBoss,
+            //    Members = IdMembers
+            //};
+
+            var department = Department.CreateDepartment(Name, IdBoss, IdMembers);
 
             if (await _departmentRepository.FindById(Id))
             {
-                return await _departmentRepository.UpdateDepartment(department);
+                return await _departmentRepository.UpdateDepartment(department.department);
             }
             else
             {

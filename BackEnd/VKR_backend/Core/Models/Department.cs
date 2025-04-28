@@ -11,16 +11,32 @@ namespace Core.Models
         public Guid Id { get; set; } = Guid.Empty;
         public string Name { get; set; } = string.Empty;
         public Guid IdBoss { get; set; } = Guid.Empty;
-        public List<Guid> Members { get; set; } = new List<Guid>();
+        public List<Guid> Members { get; set; }
 
 
-        public void CreateDepartment(Guid Id, string Name,Guid IdBoss, List<Guid> Members)
+        private Department(string name, Guid idBoss, List<Guid> members)
         {
-            this.Id = Id;
-            this.Name = Name;
-            this.IdBoss = IdBoss;
-            this.Members = Members;
+            Id = new Guid();
+            Name = name;
+            IdBoss = idBoss;
+            Members = members;
         }
 
+        public static (string error, Department department) CreateDepartment(string Name, Guid idBoss, List<Guid> members)
+        {
+            var error = string.Empty;
+
+            error = Utils.CheckValidData(Name);
+
+            if (error == "None")
+            {
+                var department = new Department(Name, idBoss, members);
+                return (error, department);
+            }
+            else
+            {
+                return (error, null);
+            }
+        }
     }
 }

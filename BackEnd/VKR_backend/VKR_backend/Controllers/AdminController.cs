@@ -1,4 +1,4 @@
-﻿using Api.Interfaces;
+﻿using Api.Interfaces.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq.Expressions;
@@ -24,8 +24,9 @@ namespace VKR_backend.Controllers
             try
             {
                 var number = new UInt32();
+                var Id = Guid.NewGuid();
                 string IndividualNumber = number.ToString(); 
-                await _userServices.Register(IndividualNumber,user.Name, user.Surname, user.Otchestvo, user.Password, user.IdDepartment, user.IdBoss, user.Role);
+                await _userServices.Register(Id,IndividualNumber,user.Name, user.Surname, user.Otchestvo, user.Password, user.IdDepartment, user.IdBoss, user.Role);
                 return Ok();            
             }
             catch

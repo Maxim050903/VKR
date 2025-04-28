@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using static Core.Types.Types;
 
 namespace DataBase.Entities
 {
@@ -16,6 +12,9 @@ namespace DataBase.Entities
         public string PasswordHash { get; set; } = string.Empty;
         public Guid IdDepartment { get; set; } = Guid.Empty;
         public Guid IdBoss { get; set; } = Guid.Empty;
-        public string Role { get; set; } = string.Empty;
+        public Roles Role { get; set; }
+        public string Mail {  get; set; } = string.Empty;
+        public string Telegram {  get; set; } = string.Empty;
+        public string Photo { get; set; } = string.Empty;//?
     }
 }

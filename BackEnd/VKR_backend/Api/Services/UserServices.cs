@@ -1,7 +1,8 @@
-﻿using Api.Interfaces;
+﻿using Api.Interfaces.Repositories;
+using Api.Interfaces.Services;
 using Core.Models;
-using DataBase.Repositories;
 using Infrastructure;
+using static Core.Types.Types;
 
 namespace Api.Services
 {
@@ -18,13 +19,13 @@ namespace Api.Services
             _jwtProvider = jwtProvider;
         }
 
-        public async Task<Guid> Register(string IndividualNumber,string Name,string Surname,string Otchestvo,string Password,Guid IdDepartment,Guid IdBoss,string Role)
+        public async Task<Guid> Register(Guid Id,string IndividualNumber,string Name,string Surname,string Otchestvo,string Password,Guid IdDepartment,Guid IdBoss, Roles Role)
         {
+            
             var hashedPassword = _passwordHasher.Generate(Password);
 
-            var user = new User();
-            user.CreateUser(IndividualNumber,Name, Surname, Otchestvo, hashedPassword, IdDepartment, IdBoss, Role);
-        
+            var user = User.CreateUser( Id,  IndividualNumber,  Name,  Surname,  Otchestvo,  Password,  IdDepartment,  IdBoss,  Role).user;
+
             await _userRepository.AddUser(user);
 
             return user.Id;
@@ -33,6 +34,11 @@ namespace Api.Services
         public async Task<List<Guid>> GetAllUsers()
         {
             return await _userRepository.GetAllUsersId();
+        }
+
+        public async Task<User> GetUser(Guid Id)
+        {
+            return await _userRepository.TakeUser(Id);
         }
 
         public async Task<Guid> DeleteUser(Guid id)
@@ -50,29 +56,11 @@ namespace Api.Services
             return id;
         }
 
-        public async Task<string> LogIn(string IndividualNumber, string password)
-        {
-            var user = new User();
-            string err = string.Empty;
-            (user,err) = _userRepository.GetByIndividualNumber(IndividualNumber).Result;
-
-            var result = _passwordHasher.Verify(password, user.PasswordHash);
-
-            if (result)
-            {
-                var token = _jwtProvider.GenerateToken(user);
-
-                return token;
-            }
-            throw new Exception("Faild LogIn");
-        }
-
         public async Task<Guid> UpdateUser(Guid Id,string IndividualNumber)
         {
             await _userRepository.UpdateUser(Id, IndividualNumber);
 
             return Id;
         }
-
     }
 }

@@ -10,6 +10,7 @@
         "dependencies": {
           "Api": "1.0.0",
           "BCrypt.Net-Next": "4.0.3",
+          "Core": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.13",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.2"
         },
@@ -1444,7 +1445,7 @@
         },
         "runtime": {
           "Api.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -1459,7 +1460,7 @@
         },
         "runtime": {
           "Core.dll": {
-            "assemblyVersion": "1.0.0",
+            "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

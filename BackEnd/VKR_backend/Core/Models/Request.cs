@@ -1,36 +1,40 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using static Core.Types.Types;
 
-namespace Core.Models
+namespace Core.Types
 {
-    [Flags]
-    public enum RequestType
-    {
-        Edit = 1,
-        Delete = 2,
-        ChangeDepartment = 3,
-        ChangePassword = 4
-    };
 
     public class Request
     {
         public Guid id { get; set; } = Guid.Empty;
+        public Guid idUser { get; set; } = Guid.Empty;
         public RequestType RequestType { get; set; }
-        public string Description { get; set; }
-
+        public string Description { get; set; } = string.Empty;
         public Request() { }
             
 
-        public Guid CreateRequest(RequestType type, string description)
+        private Request(Guid id,Guid idUser, RequestType requestType, string description)
         {
-            this.id = new Guid();
-            this.RequestType = type;
-            this.Description = description;
+            this.id = id;
+            this.idUser = idUser;
+            RequestType = requestType;
+            Description = description;
+        }
 
-            return this.id;
+        public static(string error,Request request) CreateRequest(Guid id,Guid idUser,RequestType type, string description)
+        {
+            string error = string.Empty;
+
+            error = Utils.CheckValidData(description);
+
+            if (error == "None")
+            {
+                var request = new Request(id, idUser, type, description);
+                return (error, request);
+            }
+            else
+            {
+                return (error, null);
+            }
         }
     }
 }

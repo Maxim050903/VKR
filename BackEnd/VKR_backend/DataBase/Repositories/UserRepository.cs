@@ -1,4 +1,5 @@
-﻿using Core.Models;
+﻿using Api.Interfaces.Repositories;
+using Core.Models;
 using DataBase.Entities;
 using Microsoft.EntityFrameworkCore;
 
@@ -32,6 +33,23 @@ namespace DataBase.Repositories
             await _context.SaveChangesAsync();
 
             return userEntity.Id;
+        }
+
+        public async Task<User> TakeUser(Guid id)
+        {
+            var UserEntity = await _context.Users.FirstOrDefaultAsync(x => x.Id == id);
+
+            var user = User.CreateUser(UserEntity.Id,
+                UserEntity.IndividualNumber,
+                UserEntity.Name,
+                UserEntity.Surname,
+                UserEntity.Otchestvo,
+                UserEntity.PasswordHash,
+                UserEntity.IdDepartment,
+                UserEntity.IdBoss,
+                UserEntity.Role).user;
+
+            return user;
         }
 
         public async Task<Guid> DeleteUser(Guid id)
@@ -80,16 +98,8 @@ namespace DataBase.Repositories
             string error = string.Empty;
             if (UserEntity != null)
             {
-                var user = new User() 
-                {
-                    Id = UserEntity.Id,
-                    IdBoss = UserEntity.IdBoss,
-                    IdDepartment = UserEntity.IdDepartment,
-                    Name = UserEntity.Name,
-                    Surname = UserEntity.Surname,
-                    Role = UserEntity.Role,
-                    PasswordHash = UserEntity.PasswordHash
-                };
+                var user = User.CreateUser(UserEntity.Id, UserEntity.IndividualNumber, UserEntity.Name, UserEntity.Surname,
+                    UserEntity.Otchestvo, UserEntity.PasswordHash, UserEntity.IdDepartment, UserEntity.IdBoss, UserEntity.Role).user; 
                 error = "ok";
                 return (user, error);
             }
