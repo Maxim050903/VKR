@@ -7866,11 +7866,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Core\\Core.csproj",
+      "projectUniqueName": "C:\\Users\\cuzev\\OneDrive\\Рабочий стол\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Core\\Core.csproj",
+      "projectPath": "C:\\Users\\cuzev\\OneDrive\\Рабочий стол\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\cuzev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Core\\obj\\",
+      "outputPath": "C:\\Users\\cuzev\\OneDrive\\Рабочий стол\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -7903,7 +7903,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -7952,7 +7952,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,5 +1,4 @@
-﻿using Microsoft.IdentityModel.Protocols.OpenIdConnect;
-using static Core.Types.Types;
+﻿using static Core.Types.Types;
 
 namespace VKR_backend.DTOs
 {

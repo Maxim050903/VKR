@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HIOa2k/PDTw=",
+  "dgSpecHash": "oXUGranhU4c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\cuzev\\Desktop\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Api.csproj",
+  "projectFilePath": "C:\\Users\\cuzev\\OneDrive\\Рабочий стол\\GitRepository\\VKR\\BackEnd\\VKR_backend\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cuzev\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\cuzev\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -1,6 +1,5 @@
 ﻿using Api.Interfaces.Services;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Authorization.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using VKR_backend.DTOs;
 

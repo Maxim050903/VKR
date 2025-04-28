@@ -1,5 +1,4 @@
 ﻿using Core.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace Api.Interfaces.Repositories
 {
