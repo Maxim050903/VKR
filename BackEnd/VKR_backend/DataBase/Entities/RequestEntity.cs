@@ -1,6 +1,4 @@
-﻿using Core.Models;
-using Core.Types;
-using static Core.Types.Types;
+﻿using static Core.Types.Types;
 
 namespace DataBase.Entities
 {

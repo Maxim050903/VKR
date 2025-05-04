@@ -5,8 +5,6 @@ using DataBase;
 using DataBase.Repositories;
 using Infrastructure;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Options;
 using VKR_backend.Extantions;
 
 var builder = WebApplication.CreateBuilder(args);

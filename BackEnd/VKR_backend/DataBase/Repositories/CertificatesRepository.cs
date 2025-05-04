@@ -1,7 +1,6 @@
 ﻿using Core.Models;
 using DataBase.Entities;
 using Microsoft.EntityFrameworkCore;
-using System.Diagnostics.Contracts;
 
 namespace DataBase.Repositories
 {
