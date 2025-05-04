@@ -1,6 +1,6 @@
 ﻿using static Core.Types.Types;
 
-namespace Core.Types
+namespace Core.Models
 {
 
     public class Request
@@ -9,9 +9,7 @@ namespace Core.Types
         public Guid idUser { get; set; } = Guid.Empty;
         public RequestType RequestType { get; set; }
         public string Description { get; set; } = string.Empty;
-        public Request() { }
             
-
         private Request(Guid id,Guid idUser, RequestType requestType, string description)
         {
             this.id = id;

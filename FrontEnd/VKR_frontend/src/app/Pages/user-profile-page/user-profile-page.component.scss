@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgba(104, 100, 97, 1);
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 20px;
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.avatar {
+  width: 350px;
+  height: 350px;
+  margin-left:100px;
+  text-align:center;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.contacts p {
+  margin: 35px 0;
+}
+
+.info-table {
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+}
+
+.label {
+  width: 50%;
+  background-color: #ffffff;
+  padding: 10px;
+  color: black;
+}
+
+.value {
+  width: 50%;
+  background-color: #cde6ff;
+  padding: 10px;
+}
+
+.table-block {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.cell {
+  height: 40px;
+  background-color: #cde6ff;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+.edit-btn {
+  background-color: #d4af6b;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.certificate {
+  background-color: #eeeeee;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.bottom-btn {
+  text-align: center;
+  padding: 20px;
+}
+
+.resume-btn {
+  background-color: #d4af6b;
+  color: black;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}

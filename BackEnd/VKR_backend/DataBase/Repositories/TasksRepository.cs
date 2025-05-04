@@ -18,7 +18,7 @@ namespace DataBase.Repositories
 
         public TasksRepository(VKRDBContext context)
         {
-            _context = context;
+            _context = context; 
         }
 
         public async Task<Guid> AddTask(_Task task)
@@ -85,7 +85,7 @@ namespace DataBase.Repositories
 
         public async Task<List<_Task>> GetTasksForUser(Guid IdUser, Guid IdDepartment, int page)
         {
-            var tasksEntity = await _context.Tasks.Where(x => (x.idUorD == IdUser) || (x.idUorD == IdDepartment)).Skip((page - 1) * 5).Take(5).ToListAsync();
+            var tasksEntity = await _context.Tasks.Where(x => (x.idUorD == IdUser) || (x.idUorD ==IdDepartment)).Skip((page - 1) * 5).Take(5).ToListAsync();
 
             var tasks = tasksEntity.Select(b => _Task.CreateTask(b.Id, b.Name, b.IdBoss, b.IdAgragete, b.Type, b.idUorD).task).ToList();
 

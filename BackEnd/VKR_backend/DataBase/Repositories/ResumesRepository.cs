@@ -1,6 +1,7 @@
 ﻿using Core.Models;
 using DataBase.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace DataBase.Repositories
 {
@@ -13,17 +14,17 @@ namespace DataBase.Repositories
             _context = context;
         }
 
-        public async Task<Guid> AddResume(Resume resume)
+        public async Task<Guid> CreateResume(Resume resume)
         {
             var ResumeEntity = new ResumeEntity
             {
                 Id = resume.id,
                 IdUser = resume.IdUser,
-                DateStart = DateTime.UtcNow.Date,
+                DateStart = resume.DateStart,
                 JobTitle = resume.JobTitle,
                 idDepartment = resume.idDepartment,
-                Experience = DateTime.UtcNow.Date,
-                ExperienceOnCompany = DateTime.UtcNow.Date,
+                Experience = resume.Experience,
+                ExperienceOnCompany = resume.ExperienceOnCompany,
                 IdSertificates = resume.IdSertificates
             };
 
@@ -34,15 +35,24 @@ namespace DataBase.Repositories
             return resume.id;
         }
 
-        //public async Task<Resume> GetResumeForUserId(Guid Id)
-        //{
-        //    var resumeEntity = await _context.Resumes.FirstOrDefaultAsync(x => x.IdUser == Id);
+        public async Task<Resume> GetUserResume(Guid id)
+        {
+            var ResumeEntity = await _context.Resumes.Where(x => x.IdUser == id).FirstOrDefaultAsync();
 
-        //    var resume = Resume.CreateResume(resumeEntity.Id,
-        //        resumeEntity.IdUser,resumeEntity.DateStart,resumeEntity.JobTitle,
-        //        resumeEntity.idDepartment, resumeEntity.Experience,resumeEntity.ExperienceOnCompany,
-        //        resumeEntity.IdSertificates);
-        //}
+            var resume = Resume.CreateResume(ResumeEntity.Id,
+                ResumeEntity.IdUser, ResumeEntity.DateStart,
+                ResumeEntity.JobTitle, ResumeEntity.idDepartment,
+                ResumeEntity.Experience, ResumeEntity.ExperienceOnCompany,
+                ResumeEntity.IdSertificates);
+            if (resume.error == "None")
+            {
+                return resume.resume;
+            }
+            else
+            {
+                throw new Exception(resume.error);
+            }
+        }
 
         public async Task<Guid> UpdateResume(Resume resume)
         {
@@ -50,11 +60,11 @@ namespace DataBase.Repositories
             {
                 Id = resume.id,
                 IdUser = resume.IdUser,
-                DateStart = DateTime.UtcNow.Date,
+                DateStart = resume.DateStart,
                 JobTitle = resume.JobTitle,
                 idDepartment = resume.idDepartment,
-                Experience = DateTime.UtcNow.Date,
-                ExperienceOnCompany = DateTime.UtcNow.Date,
+                Experience = resume.Experience,
+                ExperienceOnCompany = resume.ExperienceOnCompany,
                 IdSertificates = resume.IdSertificates
             };
             await _context.Resumes

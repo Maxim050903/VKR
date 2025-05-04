@@ -47,6 +47,14 @@ builder.Services.AddScoped<ITasksRepository, TasksRepository>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 //Services
+builder.Services.AddScoped<IAgrigatesService, AgrigatesService>();
+builder.Services.AddScoped<ICertificatesService, CertificatesService>();
+builder.Services.AddScoped<IContractsService, ContractsService>();
+builder.Services.AddScoped<IDepartmentServices, DepartmentServices>();
+builder.Services.AddScoped<IOrganizationService, OrganizationService>();
+builder.Services.AddScoped<IRequestService, RequestService>();
+builder.Services.AddScoped<IResumeService, ResumeService>();
+builder.Services.AddScoped<ITasksService, TasksService>();
 builder.Services.AddScoped<IUserServices, UserServices>();
 
 

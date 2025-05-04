@@ -9,5 +9,7 @@ namespace Api.Interfaces.Repositories
         Task<Guid> DeleteDepartment(Guid id);
         Task<Guid> UpdateDepartment(Department department);
         Task<bool> FindById(Guid id);
+        Task<List<Department>> GetAllDepartment(int page);
+        Task<Department> GetDepartment(Guid idBoss, Guid id);
     }
 }

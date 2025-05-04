@@ -21,10 +21,10 @@
         [Flags]
         public enum Roles
         {
-            BigBoss = 2,
-            Boss = 1,
-            Worker = 0,
-            Admin = 3   
+            Director = 3,
+            Boss = 2,
+            Worker = 1,
+            Admin = 0   
         };
 
         [Flags]

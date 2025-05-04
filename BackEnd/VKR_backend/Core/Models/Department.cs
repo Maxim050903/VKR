@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Core.Models
+﻿namespace Core.Models
 {
     public class Department
     {
@@ -14,15 +8,15 @@ namespace Core.Models
         public List<Guid> Members { get; set; }
 
 
-        private Department(string name, Guid idBoss, List<Guid> members)
+        private Department(Guid id,string name, Guid idBoss, List<Guid> members)
         {
-            Id = new Guid();
+            Id = id;
             Name = name;
             IdBoss = idBoss;
             Members = members;
         }
 
-        public static (string error, Department department) CreateDepartment(string Name, Guid idBoss, List<Guid> members)
+        public static (string error, Department department) CreateDepartment(Guid id,string Name, Guid idBoss, List<Guid> members)
         {
             var error = string.Empty;
 
@@ -30,7 +24,7 @@ namespace Core.Models
 
             if (error == "None")
             {
-                var department = new Department(Name, idBoss, members);
+                var department = new Department(id ,Name, idBoss, members);
                 return (error, department);
             }
             else

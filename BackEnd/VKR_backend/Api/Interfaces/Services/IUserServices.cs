@@ -10,6 +10,6 @@ namespace Api.Interfaces.Services
         Task<Guid> UpdateUser(Guid Id, string IndividualNumber);
         Task<Guid> DeleteUser(Guid id);
         Task<User> GetUser(Guid id);
-
+        Task<List<User>> GetAllUsersInDepartment(List<Guid> Members);
     }
 }

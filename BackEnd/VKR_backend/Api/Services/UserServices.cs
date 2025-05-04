@@ -24,16 +24,21 @@ namespace Api.Services
             
             var hashedPassword = _passwordHasher.Generate(Password);
 
-            var user = User.CreateUser( Id,  IndividualNumber,  Name,  Surname,  Otchestvo,  Password,  IdDepartment,  IdBoss,  Role).user;
+            var user = User.CreateUser( Id,  IndividualNumber,  Name,  Surname,  Otchestvo,  Password,  IdDepartment,  IdBoss,  Role);
 
-            await _userRepository.AddUser(user);
-
-            return user.Id;
+            if (user.error == "None")
+            {
+                return await _userRepository.AddUser(user.user);
+            }
+            else
+            {
+                throw new Exception(user.error);
+            }
         }
 
-        public async Task<List<Guid>> GetAllUsers()
+        public async Task<List<User>> GetAllUsersInDepartment(List<Guid> Members)
         {
-            return await _userRepository.GetAllUsersId();
+            return await _userRepository.GetAllUsersInDepartment(Members);
         }
 
         public async Task<User> GetUser(Guid Id)

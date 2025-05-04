@@ -78,5 +78,30 @@ namespace DataBase.Repositories
 
             return department == null ? false : true;
         }
+
+        public async Task<List<Department>> GetAllDepartment(int page)
+        {
+            var DepartmentEntityes = await _context.Departments.Skip((page-1)*5).Take(5).ToListAsync();
+        
+            var departments = DepartmentEntityes.Select(x => Department.CreateDepartment(x.Id,x.Name,x.IdBoss,x.Members).department).ToList();
+
+            return departments;
+        }
+
+        public async Task<Department> GetDepartment(Guid idBoss, Guid id)
+        {
+            var DepartmentEntity = new DepartmentEntity();
+            if (idBoss == Guid.Empty)
+            {
+                DepartmentEntity = await _context.Departments.Where(x => x.Id == id).FirstOrDefaultAsync();
+            }
+            else
+            {
+                DepartmentEntity = await _context.Departments.Where(x=> x.IdBoss == idBoss).FirstOrDefaultAsync();
+            }
+            var department = Department.CreateDepartment(DepartmentEntity.Id, DepartmentEntity.Name, DepartmentEntity.IdBoss, DepartmentEntity.Members);
+
+            return department.department;
+        }
     }
 }

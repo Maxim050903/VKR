@@ -31,9 +31,9 @@ namespace DataBase.Repositories
             return certificate.Id;
         }
 
-        public async Task<List<Certificate>> GetCertificates()
+        public async Task<List<Certificate>> GetCertificates(List<Guid> IdCertificates)
         {
-            var CertificateEntity = await _context.Certificates.AsNoTracking().ToArrayAsync();
+            var CertificateEntity = await _context.Certificates.Where(x => IdCertificates.Contains(x.Id)).ToListAsync();
 
             var Certificates = CertificateEntity.Select(x => Certificate.CreateCertificate(x.Id, x.Name, x.Organization, x.Description).certificate).ToList();
 

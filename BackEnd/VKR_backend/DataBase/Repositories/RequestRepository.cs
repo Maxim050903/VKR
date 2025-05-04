@@ -1,11 +1,6 @@
-﻿using Core.Types;
+﻿using Core.Models;
 using DataBase.Entities;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataBase.Repositories
 {
@@ -18,7 +13,7 @@ namespace DataBase.Repositories
             _context = context;
         }
 
-        public async Task<Guid> AddRequest(Request request)
+        public async Task<Guid> CreateRequest(Request request)
         {
             var requestEntity = new RequestEntity
             {

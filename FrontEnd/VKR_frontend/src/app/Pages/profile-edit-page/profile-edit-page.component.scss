@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 250%;
+  background-color: rgba(104, 100, 97, 1);
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 20px;
+}
+
+.left-column,
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.avatar {
+  width: 350px;
+  height: 350px;
+  margin-left:20%;
+  //text-align: center;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.string{
+  text-align: center;
+  color: white;
+}
+
+.row input{
+  height: 50%;
+  width: 50%;
+  border: none;
+  background-color: rgb(253, 253, 253);
+  padding: 10px;
+  font-size: 100%;
+}
+
+.row {
+  margin-bottom: 25px;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.Label {
+  width: 50%;
+  background-color: #dce0ec;
+  padding: 10px;
+  color: black;
+}
+
+.value {
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.edit-btn {
+  background-color: #d4af6b;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size:30px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.bottom-btn {
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+
+

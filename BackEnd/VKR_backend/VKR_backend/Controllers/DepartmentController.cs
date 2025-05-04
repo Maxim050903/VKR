@@ -6,7 +6,7 @@ namespace VKR_backend.Controllers
 
     [ApiController]
     [Route("[controller]")]
-    [Authorize(Roles = "BigBoss")]
+    [Authorize(Roles = "Boss")]
     public class DepartmentController: ControllerBase
     {
         

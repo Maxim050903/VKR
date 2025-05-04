@@ -52,6 +52,15 @@ namespace DataBase.Repositories
             return user;
         }
 
+        public async Task<List<User>> GetAllUsersInDepartment(List<Guid> Members)
+        {
+            var UsersEntities = await _context.Users.Where(x => Members.Contains(x.Id)).ToListAsync();
+
+            var Users = UsersEntities.Select(x => User.CreateUser(x.Id,x.IndividualNumber, x.Name,x.Surname,x.Otchestvo,x.PasswordHash,x.IdDepartment,x.IdBoss,x.Role).user).ToList();
+
+            return Users;
+        }
+
         public async Task<Guid> DeleteUser(Guid id)
         {
             await _context.Users.Where(x => x.Id == id).ExecuteDeleteAsync();

@@ -6,7 +6,7 @@ namespace DataBase.Repositories
     {
         Task<Guid> CreateCertificate(Certificate certificate);
         Task<Guid> DeleteCertificate(Guid Id);
-        Task<List<Certificate>> GetCertificates();
+        Task<List<Certificate>> GetCertificates(List<Guid> IdCertificates);
         Task<Guid> UpdateCertificate(Certificate certificate);
     }
 }

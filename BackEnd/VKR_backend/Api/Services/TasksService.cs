@@ -1,12 +1,14 @@
 ﻿using Api.Interfaces.Repositories;
 using Api.Interfaces.Services;
 using Core.Models;
+using Microsoft.AspNetCore.DataProtection.XmlEncryption;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static Core.Types.Types;
 
 namespace Api.Services
 {
@@ -34,11 +36,22 @@ namespace Api.Services
         }
 
 
-        public async Task<Guid> AddNewTask(_Task task)
+        public async Task<Guid> CreateTask(string Name, Guid IdBoss, Guid IdAgregate, TaskType Type, Guid idUorD)
         {
-            await _tasksRepository.AddTask(task);
+            var id = Guid.NewGuid();
 
-            return task.Id;
+            var task = _Task.CreateTask(id, Name, IdBoss, IdAgregate, Type, idUorD);
+
+            if (task.error == "None")
+            {
+                return await _tasksRepository.AddTask(task.task);
+            }
+            else
+            {
+                throw new Exception(task.error);
+            }
+
         }
     }
 }
+

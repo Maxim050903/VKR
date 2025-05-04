@@ -1,17 +1,67 @@
-﻿using Microsoft.IdentityModel.Protocols.OpenIdConnect;
-using static Core.Types.Types;
+﻿using static Core.Types.Types;
 
 namespace VKR_backend.DTOs
 {
-    public record UserRequest
+    public record UserCreateRequest
     (
-        string Name
+        string IndividualNumber,
+        string Name ,
+        string Surname ,
+        string Otchestvo ,
+        string Password ,
+        Guid IdDepartment,
+        Guid IdBoss,
+        Roles Role            
+    );
+
+    public record DepartmentCreateRequest
+    (
+        string Name,
+        Guid IdBoss,
+        List<Guid> Members
+    );
+
+    public record TaskCreateRequest
+    (
+        string Name,
+        Guid IdBoss,
+        Guid IdAgregate,
+        string Description,
+        TaskType tasktype,
+        Guid IdForHim
+    );
+
+    public record AgrigateCreateRequest
+    (
+        Guid IdManufacture,
+        string Name,
+        string ManufactureName
+    );
+
+    public record ContractCreateRequest
+    (
+        string Name,
+        Guid IdManufacture,
+        DateOnly DateStart,
+        DateOnly DateFinish,
+        string Description
+    );
+
+    public record CertificateCreateRequest
+    (
+        string Organization,
+        string Description   
     );
 
     public record RequestCreateRequest
     (
-        Guid IdUser,
         RequestType RequestType,
+        Guid id,
         string Description
+    );
+
+    public record OrganizationCreateRequest
+    (
+        string Name
     );
 }

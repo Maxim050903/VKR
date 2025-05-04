@@ -1,4 +1,5 @@
-﻿using DataBase.Entities;
+﻿using Core.Models;
+using DataBase.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataBase
@@ -19,5 +20,6 @@ namespace DataBase
         public DbSet<OrganizationEntity> Organizations { get; set; }
         public DbSet<ContractsEntity> Contracts { get; set; }
         public DbSet<AgragetesEntity> Agragetes { get; set; }
+        public DbSet<Request> AcceptedRequests { get; set; }
     }
 }

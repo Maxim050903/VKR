@@ -1,24 +1,8 @@
 [
   {
     "ContainingType": "VKR_backend.Controllers.AdminController",
-    "Method": "RegisterUser",
-    "RelativePath": "Admin",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "user",
-        "Type": "VKR_backend.DTOs.UserCreateResponse",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "VKR_backend.Controllers.UserController",
-    "Method": "CreateRequest",
-    "RelativePath": "CreateRequest",
+    "Method": "AcceptRequest",
+    "RelativePath": "AcceptRequest",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -33,8 +17,8 @@
   },
   {
     "ContainingType": "VKR_backend.Controllers.AdminController",
-    "Method": "DeleteUser",
-    "RelativePath": "Delete/{id}",
+    "Method": "CancellationRequest",
+    "RelativePath": "CancellationRequest",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -42,10 +26,118 @@
       {
         "Name": "id",
         "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Guid",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VKR_backend.Controllers.UserController",
+    "Method": "CreateRequest",
+    "RelativePath": "CreateRequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestZap",
+        "Type": "VKR_backend.DTOs.RequestCreateRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VKR_backend.Controllers.DirectorController",
+    "Method": "CreateTaskForDepartmentBoss",
+    "RelativePath": "Director",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "VKR_backend.DTOs.TaskCreateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VKR_backend.Controllers.DirectorController",
+    "Method": "GetAllDepartment",
+    "RelativePath": "GetAllDepartment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Core.Models.Department, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VKR_backend.Controllers.UserController",
+    "Method": "GetResume",
+    "RelativePath": "GetCertificate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Core.Models.Resume",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VKR_backend.Controllers.BossController",
+    "Method": "GetUsersInDepartment",
+    "RelativePath": "GetDepartment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Core.Models.User, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "VKR_backend.Controllers.UserController",
@@ -56,17 +148,62 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "idUser",
-        "Type": "System.Guid",
-        "IsRequired": false
-      },
-      {
         "Name": "page",
         "Type": "System.Int32",
         "IsRequired": false
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Core.Models._Task, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VKR_backend.Controllers.UserController",
+    "Method": "GetCertificate",
+    "RelativePath": "GetUserCertificate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Core.Models.Certificate, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "VKR_backend.Controllers.UserController",
+    "Method": "GetUser",
+    "RelativePath": "GetUserInfo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "VKR_backend.DTOs.UserResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "VKR_backend.Controllers.AuthController",
@@ -91,20 +228,15 @@
   },
   {
     "ContainingType": "VKR_backend.Controllers.AdminController",
-    "Method": "UpdateUser",
-    "RelativePath": "Update/{id}/{IndividualNumber}",
-    "HttpMethod": "PUT",
+    "Method": "RegisterUser",
+    "RelativePath": "Register",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "IndividualNumber",
-        "Type": "System.String",
+        "Name": "user",
+        "Type": "VKR_backend.DTOs.UserCreateRequest",
         "IsRequired": true
       }
     ],

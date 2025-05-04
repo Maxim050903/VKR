@@ -131,20 +131,41 @@ namespace DataBase.Migrations
                     b.ToTable("Organizations");
                 });
 
+            modelBuilder.Entity("DataBase.Entities.RequestEntity", b =>
+                {
+                    b.Property<Guid>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("RequestType")
+                        .HasColumnType("integer");
+
+                    b.Property<Guid>("idUser")
+                        .HasColumnType("uuid");
+
+                    b.HasKey("id");
+
+                    b.ToTable("Requests");
+                });
+
             modelBuilder.Entity("DataBase.Entities.ResumeEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<DateTime>("DateStart")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<DateOnly>("DateStart")
+                        .HasColumnType("date");
 
-                    b.Property<DateTime>("Experience")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<DateOnly>("Experience")
+                        .HasColumnType("date");
 
-                    b.Property<DateTime>("ExperienceOnCompany")
-                        .HasColumnType("timestamp with time zone");
+                    b.Property<DateOnly>("ExperienceOnCompany")
+                        .HasColumnType("date");
 
                     b.PrimitiveCollection<List<Guid>>("IdSertificates")
                         .IsRequired()
@@ -162,7 +183,7 @@ namespace DataBase.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("ResumeEntity");
+                    b.ToTable("Resumes");
                 });
 
             modelBuilder.Entity("DataBase.Entities.UserEntity", b =>

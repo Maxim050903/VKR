@@ -12,5 +12,6 @@ namespace Api.Interfaces.Repositories
         Task<Guid> UpdateUser(Guid Id, string IndividualNumber);
         Task<List<Guid>> GetAllUsersId();
         Task<User> TakeUser(Guid id);
+        Task<List<User>> GetAllUsersInDepartment(List<Guid> Members);
     }
 }

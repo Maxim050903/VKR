@@ -1,60 +1,48 @@
-﻿using static Core.Types.Types;
+﻿using Core.Models;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+using static Core.Types.Types;
 
 namespace VKR_backend.DTOs
-{
-    public record UserCreateResponse
+{ 
+    public record UserResponse
     (
-        string IndividualNumber,
-        string Name ,
-        string Surname ,
-        string Otchestvo ,
-        string Password ,
+        string Name,
+        string Surname,
+        string Otchestvo,
         Guid IdDepartment,
         Guid IdBoss,
-        Roles Role            
+        Roles Role,
+        string Mail,
+        string Telegram,
+        string Photo
     );
 
-    public record DepartmentCreateResponse
-    (
-        string Name,
-        Guid IdBoss,
-        List<Guid> Members
-    );
+    public record RequestResponseBase
+    {
+        Guid id;
+        string Creater;
+        string DepartmentName;
+        RequestType RequestType;
+        DateOnly DateCreate;
+    }
 
-    public record TaskCreateResponse
-    (
-        string Name,
-        Guid IdBoss,
-        Guid IdAgregate,
-        string Description,
-        TaskType tasktype,
-        Guid IdForHim
-    );
+    public record RequestResponse1 : RequestResponseBase
+    {
+        List<User> users;
+    }
 
-    public record AgrigateCreateResponse
-    (
-        Guid IdManufacture,
-        string Name,
-        string ManufactureName
-    );
+    public record RequestResponse2 : RequestResponseBase
+    {
+        User user;
+    }
 
-    public record ContractCreateResponse
-    (
-        string Name,
-        Guid IdManufacture,
-        DateOnly DateStart,
-        DateOnly DateFinish,
-        string Description
-    );
+    public record RequestResponse3 : RequestResponseBase
+    {
+        Department department;
+    }
 
-    public record CertificateCreateResponse
-    (
-        string Organization,
-        string Description
-    );
-
-    public record OrganizationCreateResponse
-    (
-        string Name
-    );
+    public record RequestResponse4 : RequestResponseBase
+    {
+        string NewPassword;
+    }
 }
